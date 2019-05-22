@@ -1,0 +1,123 @@
+<%- content_for :head_css do %>
+  
+<%= stylesheet_link_tag 'admin/libs/flatpickr/flatpickr.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<% end %>
+<div class="wrapper">
+            <div class="container">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box">
+                            <h4 class="page-title">Manage team</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                <div class="row">
+
+
+                    <div class="col-lg-4 col-xl-4">
+
+                        <div class="card-container manual-flip card-box text-center d-none d-lg-block">
+                            <div class="card">
+                                <div class="front">
+                                    
+                                    <img src="/template-assets/images/blob.png" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
+
+                                    <h4 class="mb-2">Team Name</h4>
+
+                                    <div class="avatar-group">
+                                                            <a href="javascript: void(0);" class="avatar-group-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Name">
+                                                                <img src="/template-assets/images/users/elsa.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                                            </a>
+                    
+                                                            <a href="javascript: void(0);" class="avatar-group-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Name">
+                                                                <img src="/template-assets/images/users/bill.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                                            </a>
+                    
+                                                            <a href="javascript: void(0);" class="avatar-group-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Name">
+                                                                 <img src="/template-assets/images/users/steve.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                                            </a>
+                    
+                                                        </div>
+
+                                    <p class="/admin/wallet" class="mt-0">14 direct reports</p>
+
+                                    <ul class="social-list list-inline mt-3 mb-0">
+                                        <a href="/admin/manage" class="btn btn-warning">Manage team</a>
+                                    </ul>
+
+
+   
+                                </div> <!-- end front panel -->
+                            </div>
+                        </div>
+                    </div>
+
+                         <div class="col-lg-4 col-xl-4">
+
+                        <div class="card-container manual-flip card-box text-center d-none d-lg-block">
+                            <div class="card">
+                                <div class="front">
+                                    
+                                    <img src="/template-assets/images/blob2.png" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
+
+                                    <h4 class="mb-2">Team Name</h4>
+
+                                    <div class="avatar-group">
+                                                            <a href="javascript: void(0);" class="avatar-group-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Name">
+                                                                <img src="/template-assets/images/users/user-1.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                                            </a>
+                    
+                                                            <a href="javascript: void(0);" class="avatar-group-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Name">
+                                                                <img src="/template-assets/images/users/user-2.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                                            </a>
+                    
+                                                            <a href="javascript: void(0);" class="avatar-group-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Name">
+                                                                <img src="/template-assets/images/users/user-3.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                                            </a>
+                    
+                                                        </div>
+
+                                    <p class="/admin/wallet" class="mt-0">6 colleages</p>
+
+                                    <ul class="social-list list-inline mt-3 mb-0">
+                                        <a href="" class="btn btn-warning">Manage team</a>
+                                    </ul>
+
+
+
+
+                                </div> <!-- end front panel -->
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                
+
+               
+                
+            </div> <!-- end container -->
+             </div><%- content_for :footer_js do %>
+
+             <%= javascript_include_tag 'admin/libs/flatpickr/flatpickr.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/jquery-knob/jquery.knob.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/jquery-sparkline/jquery.sparkline.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/flot-charts/jquery.flot.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/flot-charts/jquery.flot.resize.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/flot-charts/jquery.flot.time.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/flot-charts/jquery.flot.tooltip.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/flot-charts/jquery.flot.selection.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/flot-charts/jquery.flot.crosshair.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/js/pages/dashboard-1.init.js', 'data-turbolinks-track': 'reload' %>
+  
+<%= javascript_include_tag 'admin/libs/raphael/raphael.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/justgage/justgage.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/js/pages/justgage.init.js', 'data-turbolinks-track': 'reload' %>
+<% end %>
